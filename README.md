@@ -88,12 +88,16 @@ jinja
 
 #### CPU
 
+下面是我用vs2020编译的cpu版本，因为torch_cpu.dll太大，没有提交到release中。请在release模式下面跑，不要到debug模式跑，libtorch是release模式，然后debug模式我电脑调试会崩溃。
+
 下载：
+
 https://github.com/opencv/opencv/releases/download/4.9.0/opencv-4.9.0-windows.exe
 
 https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.8.0%2Bcpu.zip
 
 执行：
+
 ```shell
 cd OpenSplat
 md build
