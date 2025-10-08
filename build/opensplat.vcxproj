@@ -150,7 +150,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ccodes\OpenSplat\rasterizer;D:\ccodes\OpenSplat\build\_deps\nlohmann_json-src\include;D:\ccodes\OpenSplat\build\_deps\cxxopts-src\include;D:\ccodes\OpenSplat\build\_deps\nanoflann-src\include;C:\opencv\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ccodes\OpenSplat\rasterizer;D:\ccodes\OpenSplat\build\_deps\nlohmann_json-src\include;D:\ccodes\OpenSplat\build\_deps\cxxopts-src\include;D:\ccodes\OpenSplat\build\_deps\nanoflann-src\include;D:\ccodes\opencv490\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "D:/ccodes/libtorch/include" /external:I "D:/ccodes/libtorch/include/torch/csrc/api/include" /external:I "C:/opencv/build" /d2implyavx512upperregs- /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -199,8 +199,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>Release\gsplat_cpu.lib;D:\ccodes\libtorch\lib\c10.lib;D:\ccodes\libtorch\lib\kineto.lib;C:\opencv\build\lib\libopencv_highgui4120.dll.a;C:\opencv\build\lib\libopencv_calib3d4120.dll.a;D:\ccodes\libtorch\lib\torch.lib;D:\ccodes\libtorch\lib\torch_cpu.lib;D:\ccodes\libtorch\lib\c10.lib;C:\opencv\build\lib\libopencv_videoio4120.dll.a;C:\opencv\build\lib\libopencv_imgcodecs4120.dll.a;C:\opencv\build\lib\libopencv_features2d4120.dll.a;C:\opencv\build\lib\libopencv_imgproc4120.dll.a;C:\opencv\build\lib\libopencv_flann4120.dll.a;C:\opencv\build\lib\libopencv_core4120.dll.a;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Release\gsplat_cpu.lib;D:\ccodes\libtorch\lib\c10.lib;D:\ccodes\libtorch\lib\kineto.lib;D:\ccodes\libtorch\lib\torch.lib;D:\ccodes\libtorch\lib\torch_cpu.lib;opencv_world490.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);D:\ccodes\opencv490\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
