@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ccodes\OpenSplat\build\CMakeFiles\fd71a84507af2e81b750fc4861f16402\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BBF72C3-8774-3E97-932F-A48356975553}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

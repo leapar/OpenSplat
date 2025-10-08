@@ -2,7 +2,17 @@
 .DS_Store
 
 # build
-build/
 my_build/
 .idea/
 .vscode/
+/build-makegui
+/build/.vs
+/build/_deps
+/build/CMakeFiles
+/build/Debug/banana
+/build/Debug
+/build/gsplat.dir
+/build/gsplat_cpu.dir
+/build/opensplat.dir
+/build/x64/Debug/ZERO_CHECK
+/build/x64/Release/ZERO_CHECK
