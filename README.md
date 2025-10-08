@@ -86,6 +86,34 @@ jinja
 
 ### Windows
 
+#### CPU
+
+下载：
+https://github.com/opencv/opencv/releases/download/4.9.0/opencv-4.9.0-windows.exe
+
+https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.8.0%2Bcpu.zip
+
+执行：
+```shell
+cd OpenSplat
+md build
+cd build
+cmake -DCMAKE_PREFIX_PATH=C:/path_to/libtorch -DGPU_RUNTIME="CPU" -DOPENCV_DIR=C:/path_to/OpenCV_4.9.0/build -DCMAKE_BUILD_TYPE=Release ..
+cmake --build . --config Release
+```
+
+
+For libtorch visit https://pytorch.org/get-started/locally/ and select your OS, for package select "LibTorch". For compute platform you can select "CPU".
+
+ Then:
+
+ ```bash
+ git clone https://github.com/pierotofy/OpenSplat OpenSplat
+ cd OpenSplat
+ mkdir build && cd build
+ cmake -DCMAKE_PREFIX_PATH=/path/to/libtorch/ .. && make -j$(nproc)
+ ```
+
 There's several ways to build on Windows, but this particular configuration has been confirmed to work:
 
 * Visual Studio 2022 C++
